@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formCardStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <form action="#">
+        <h2>Account</h2>
+        <!-- name, email, password -->
+        <div class="form_item account__box">
+            <div class="input__box input__box__fullname">
+                <i class="fas fa-user"></i>
+                <input type="text"  id="fullname__input" name="fullname" placeholder="Fullname">
+            </div>
+            <div class="input__box input__box__email">
+                <i class="fas fa-envelope"></i>
+                <input type="text" id="email__input" name="email" placeholder="Email Adress">
+            </div>
+            <div class="input__box input__box__password">
+                
+                <i class="fa fa-key"></i>
+                <input type="text" id="password__input" name="password" placeholder="Password">
+             
+            </div>
+        </div>
+        <!-- date of birth, gender -->
+        <div class="form_item date__gender__box">
+            <div class="input_box input__box__date">
+                <h3>Date of Birth</h3>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="input__box input__box__gender">
+                <h3>Gender</h3>
+                <div class="input__genderbox">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" >
+                        <label class="lable__gender" for="male">Male</label>
+                    </div> 
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label class="lable__gender" for="female">Female</label>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <!-- creditcar, paypal,card number, card cvc, date year-->
+        <div class="form_item payment__details_box">
+            <h3>Payment Details</h3>
+            <div class="input__box card__box">
+                <div>
+                    <input type="radio" id="car__input1" name="card" class="card__input1"></input>
+                    <label class="card__label" for="car__input1">Credit card</label>
+                </div>
+                <div>
+                    <input type="radio" id="car__input2" name="card" class="card__input2"></input>
+                    <label class="card__label" for="car__input2">Paypal</label>
+                </div>
+            </div>
+            <div class="input__box cardnumber__box">
+                    <i class="fa fa-credit-card"></i>
+                    <input type="number" id="cardnumber" name="cardnumber"  placeholder="Card Number">
+            </div>
+            <div class="input__box cvc__date__box">
+                <div class="cardcvc__box cardcvc__box1">
+                    <i class="fa fa-credit-card"></i>
+                    <input type="text" id="cardcvc" name="cardcvc"  placeholder="Card CVC">
+                </div>
+                <div class="cardcvc__box dateyear__box">
+                    <input type="date"id="date__sigin" name="date__sigin">
+                </div>
+            </div>
+        </div>
+        </form>
+</body>
+</html>

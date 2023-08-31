@@ -1,0 +1,59 @@
+/* Khai báo các biến màu sắc */
+:root {
+    --light-green: #d4f0d2;
+    --dark-green: #4caf50;
+  }
+  
+  /* Định dạng cho các phần tử input, select, và button */
+  input[type=text], input[type=email], input[type=password], input[type=date], select, button {
+    width: 100%; /* Chiều rộng bằng với khung chứa */
+    padding: 12px; /* Khoảng cách giữa nội dung và đường viền */
+    margin: 8px 0; /* Khoảng cách giữa các phần tử */
+    border: 1px solid #ccc; /* Đường viền màu xám nhạt */
+    border-radius: 4px; /* Bán kính bo góc */
+  }
+  
+  /* Định dạng cho các phần tử input[type=radio] và label */
+  input[type=radio], label {
+    display: inline-block; /* Hiển thị trên cùng một hàng */
+    margin: 8px; /* Khoảng cách giữa các phần tử */
+  }
+  
+  /* Định dạng cho nút submit */
+  button {
+    background-color: var(--dark-green); /* Màu nền xanh đậm */
+    color: white; /* Màu chữ trắng */
+  }
+  
+  /* Định dạng cho khung chứa của form */
+  .container {
+    background-color: var(--light-green); /* Màu nền xanh nhạt */
+    padding: 16px; /* Khoảng cách giữa nội dung và đường viền */
+  }
+  
+  /* Định dạng cho tiêu đề của form */
+  h1 {
+    text-align: center; /* Căn giữa chữ */
+  }
+  
+  /* Định dạng cho đường kẻ ngang */
+  hr {
+    border: none; /* Loại bỏ đường viền */
+    height: 1px; /* Chiều cao của đường kẻ */
+    background-color: #ccc; /* Màu xám nhạt */
+  }
+  
+  /* Ẩn các chi tiết thanh toán mặc định */
+  #credit-card-details, #paypal-details {
+    display: none;
+  }
+  
+  /* Hiển thị các chi tiết thanh toán tương ứng với phương thức được chọn */
+  input[type=radio]:checked ~ #credit-card-details {
+    display: block;
+  }
+  
+  input[type=radio]:checked ~ #paypal-details {
+    display: block;
+  }
+  

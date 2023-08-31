@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formSurveyStyle.css">
+</head>
+<body>
+    <h4>What would you like to do next ?</h4>
+    <p class="p__first">Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+    <form action="#" class="form">
+        <div class="countainner__box countainner__box1">
+                <div class="countainner__box1__item check__box">
+                    <div class="check__box__item">
+                        <input type="checkbox" id="check1" name="check1"value="check1">
+                        <label for="check1">Use Counpon Code</label>
+                    </div>
+                    <div class="check__box__item">
+                        <input type="checkbox" id="check2" name="check2"value="check2">
+                        <label for="check2">Use Gift Voucher</label>
+                    </div>
+                    <div class="check__box__item">
+                        <input type="checkbox" id="check3" name="check3"value="check3">
+                        <label for="check3">Estimate Shipping & Taxes</label>
+                    </div>
+                </div>
+                <div class="countainner__box1__item select__box">
+                    <div class="select__box__item country__box">
+                        <p>Country:</p>
+                        <div class="county">
+                            <select name="country" id="country">
+                                <option value="Italia">Italia</option>
+                                <option value="USA">USA</option>
+                                <option value="VietNam">VietNam</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select__box__item region__box">
+                        <p>Region/State:</p>
+                        <div class="region">
+                            <select name="region" id="region">
+                                <option value="Florida">Florida</option>
+                                <option value="Maine">Maine</option>
+                                <option value="Alaska">Alaska</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select__box__item zip__box">
+                        <p>Zip code:</p>
+                        <div class="select__box__item">
+                            <input type="text" name="zipcode" id="zipcode" placeholder="Zipcode">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit__box submit__box1">
+                    <input type="submit" name="getquotes" value="Get Quotes">
+                    <input type="submit" name="continue" value="Continue">
+                </div>
+        </div>
+        <div class="countainner__box countainner__box2">
+            <div class="input">
+                <input type="text" name="text1" id="text1" placeholder="Cart sub total">
+                <input type="text" name="text2" id="text2" placeholder="Eco tax">
+                <input type="text" name="text1" id="text1" placeholder="Shipping cost">
+                <input type="text" name="text1" id="text1" placeholder="Total">
+            </div>
+            <div class="submit__box submit__box2">
+                <input type="submit" name="getquotes" value="Update">
+                <input type="submit" name="continue" value="Check Out">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

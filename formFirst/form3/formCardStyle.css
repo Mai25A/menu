@@ -1,0 +1,145 @@
+:root{
+    --primary-color:rgb(219, 216, 216);
+}
+form, .form_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 131, 138);
+    max-width: 700px;
+
+}
+form h2,.form_item h3{
+    color: white;
+}
+.form_item{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+.account__box{
+    /* khoang cach giua cac item nam trong accountbox */
+    gap: 10px;
+
+}
+/* phan fullname, email, pasword */
+.account__box .input__box, .payment__details_box .cardnumber__box,.payment__details_box .cvc__date__box .cardcvc__box {
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+    border-radius: 10px;
+
+}
+.account__box .input__box input, .payment__details_box .cardnumber__box input, .payment__details_box .cvc__date__box .cardcvc__box input{
+    width: 90%;
+    height: 70%;
+    border: 0 ;
+    border-left: 2px solid ;
+    background-color: rgb(219, 216, 216);
+    
+}
+.account__box .input__box i{
+    padding: 10px;
+    padding-left: 20px;
+}
+/* date of birth va gender */
+/* tao hang ngang cho date of birth và gender, male, female */
+
+.date__gender__box, .date__gender__box .input__genderbox {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.date__gender__box .input__box__date{
+    margin-right: -105px;
+}
+.date__gender__box #date{
+    height: 28px;
+    width: 200px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+.date__gender__box .input__box__gender{
+    margin-left:200px ;    
+}
+.input__genderbox div label{
+    width: 100px;
+    height: 10px;
+    padding: 7px 25px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.input__genderbox div input:checked ~ label {
+    background-color: rgb(211, 152, 25);
+    color: white;
+}
+.input__genderbox div input{
+    display: none;
+}
+
+/* pavment */
+.payment__details_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.payment__details_box h3{
+    margin-right:360px;
+    margin-left: -10px;
+}
+.payment__details_box .card__box{
+    display: flex;
+}
+.payment__details_box .card__box input{
+    display: none;
+} 
+.payment__details_box .card__box label{
+    border: 1px solid none;
+    background-color:var(--primary-color);
+    margin: 0px;
+    padding:12px 95px;
+    width: 100px;
+    cursor: pointer;
+
+}
+.payment__details_box .card__box div input:checked ~ label{
+    background-color: rgb(211, 152, 25);
+    color: white;
+}
+.payment__details_box .cvc__date__box{
+    display: flex;
+    margin-top: -10px;
+    gap: 10px;
+}
+.cardnumber__box i{
+    padding: 7px;
+}
+
+.cardcvc__box i{
+    padding: 10px;
+}
+.dateyear__box input{
+    width: 200px;
+    float: right;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.cvc__date__box{
+    width: 100%;
+}
+#date__sigin{
+    padding: 0 10px;
+    margin-right:10px;
+    width: 80%;
+    
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formSiginstyle.css">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:person:FILL@0;wght@400;GRAD@0;opsz@48&icon.query=user">
+</head>
+<body>
+    <form action="#">
+        <div class="box">
+            <label for="first__name">First name</label>
+            <div class="input__box">
+                <img src="./img/user.png">
+                <input class="box__item" id="first__name" type="text" name="first name " placeholder="First name">
+            </div>
+        </div>
+        <div class="box">
+            <label for="last__name">Last name</label>
+            <div class="input__box">
+                <img src="./img/user.png">
+                <input class="box__item" id="last__name" type="text" name="last name " placeholder="Last name" >
+            </div>
+        </div>
+        <div class="box">
+            <label for="phone__no">Phone No.</label>
+            <div class="input__box">
+                <img src="./img/phone.png" alt="">
+                <input class="box__item" id="phone__no" type="text" name="phone__no" placeholder="Phone No.">
+            </div>
+        </div>
+        <div class="box">
+            <label for="email__id">Email ID</label>
+            <div class="input__box">
+                <img src="./img/email...png" alt="">
+                <input class="box__item" id="email__id" type="text" name="email__id" placeholder="Email Id">
+            </div>
+        </div>
+        <div class="box">
+            <label for="password">Password</label>
+            <div class="input__box">
+                <img src="./img/Keyy.png" alt="">
+                <input class="box__item" id="password" type="text" name="password " placeholder="Password">
+            </div>
+        </div>
+        <div class="box" id="gender__box">
+            <p>Gender</p>
+            <div>
+                
+            <label class="gender_label" for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label class="gender_label" for="male">Male</label>
+            <input  type="radio" name="gender" id="male" value="Male">
+            </div>
+        </div>
+        <div class="box box_accept">
+            <input id="check__box" type="checkbox" name="accept" value="accept">I accept the terms and conditions
+        </div>
+        <div class="submit__box">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

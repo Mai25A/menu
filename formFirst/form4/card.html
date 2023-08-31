@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cardStyle.css">
+</head>
+<body>
+    <form>
+        <div class="container">
+          <h1>Tạo tài khoản</h1>
+          <p>Điền thông tin của bạn vào các ô bên dưới.</p>
+          <hr>
+      
+          <label for="fullname"><b>Họ và tên</b></label>
+          <input type="text" placeholder="Nhập họ và tên" name="fullname" required>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Nhập email" name="email" required>
+      
+          <label for="password"><b>Mật khẩu</b></label>
+          <input type="password" placeholder="Nhập mật khẩu" name="password" required>
+      
+          <label for="dob"><b>Ngày sinh</b></label>
+          <input type="date" name="dob" required>
+      
+          <label for="gender"><b>Giới tính</b></label>
+          <select name="gender" required>
+            <option value="">Chọn giới tính</option>
+            <option value="male">Nam</option>
+            <option value="female">Nữ</option>
+            <option value="other">Khác</option>
+          </select>
+      
+          <p><b>Chi tiết thanh toán</b></p>
+      
+          <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+          <label for="credit-card">Thẻ tín dụng</label>
+      
+          <input type="radio" id="paypal" name="payment-method" value="paypal">
+          <label for="paypal">PayPal</label>
+      
+          <div id="credit-card-details">
+            <label for="card-number"><b>Số thẻ</b></label>
+            <input type="text" placeholder="Nhập số thẻ" name="card-number">
+      
+            <label for="expiration-date"><b>Ngày hết hạn</b></label>
+            <input type="text" placeholder="MM/YY" name="expiration-date">
+          </div>
+      
+          <div id="paypal-details">
+            <label for="paypal-email"><b>Email PayPal</b></label>
+            <input type="email" placeholder="Nhập email PayPal của bạn" name="paypal-email">
+          </div>
+      
+          <button type="submit">Tạo tài khoản</button>
+        </div>
+    </form>      
+</body>
+</html>

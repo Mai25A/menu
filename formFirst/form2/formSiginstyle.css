@@ -1,0 +1,71 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(125, 140, 189);
+    padding: 30px ;
+    width: 500px;
+    margin-left: 400px;
+    border-radius: 10px;
+    border: 5px solid rgb(103, 126, 200);
+}
+.box{
+    margin-bottom: 30px;
+    display: flex;
+}
+.box__item{
+    height: 30px;
+    width: 300px;
+}
+label{
+    width:100px;
+    margin-top: 10px;
+}
+input{
+    width: 100px;
+    border: 0;
+}
+.box div img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.input__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0 0 0 10px;
+}
+#gender__box{
+    display: flex;
+    align-items: center;
+}
+.gender_label{
+    width: 20px;
+}
+#gender__box div{
+    margin-left: 40px;
+}
+#female, #male{
+    height: 20px;
+}
+#check__box{
+    height: 20px;
+}
+.submit__box{
+    width: 345px;
+    margin-left: 99px;
+}
+.submit__box input{
+    height: 40px;
+    width: 100%;
+
+}
+.box, .submit__box{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.box_accept{
+    margin-left: 55px;
+}
